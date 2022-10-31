@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         String[] locales = Locale.getISOCountries();
 
         for (String locale : locales) {
-            Locale locale1 = new Locale("", locale);
-            arry_names.add(locale1.getDisplayCountry());
-            arry_iso.add(locale);
+            Locale locale1 = new Locale("", locale); //Gets the Country Name via ISO Country Code
+            arry_names.add(locale1.getDisplayCountry()); //Gets the Country name 
+            arry_iso.add(locale); //Gets the Country ISO Code
         }
 
         Log.i("Locales names", arry_names.toString());
